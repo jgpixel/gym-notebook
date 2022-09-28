@@ -104,22 +104,6 @@ export default class App extends Component {
     }
 }
 
-class LoadingScreen extends Component {
-    constructor(props, root) {
-        super(props, root);
-        this.render();
-    }
-
-    render() {
-        const container = document.createElement('div');
-        container.id = 'loading-screen';
-        container.className = 'loading-screen';
-        container.textContent = 'loading...';
-
-        this.root.appendChild(container);
-    }
-}
-
 /* 
 
 const program = {

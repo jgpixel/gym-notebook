@@ -1,214 +1,578 @@
-{
-    "programName": "Kevin's Program",
-    "startOn": 1,
-    "days": [
-        {
-            "name": "Pull Day A",
-            "exercises": [
-                {
-                    "name": "Pull-ups",
-                    "isWarmUp": true,
-                    "setsAndReps": {
-                        "sets": 2,
-                        "repRange": [
-                            5
-                        ],
-                        "repType": "reps"
+[
+    {
+        "programName": "Kevin's Program",
+        "startOn": 1,
+        "days": [
+            {
+                "name": "Pull Day A",
+                "exercises": [
+                    {
+                        "name": "Pull-ups",
+                        "isWarmUp": true,
+                        "setsAndReps": {
+                            "sets": 2,
+                            "repRange": [
+                                5
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Warm up with an easy, dynamic stretch. Make sure to go chin to bar and all the way down on every rep.",
+                        "muscleFocus": "Thoracic lats, biceps"
                     },
-                    "description": "Warm up with an easy, dynamic stretch. Make sure to go chin to bar and all the way down on every rep.",
-                    "muscleFocus": "Thoracic lats, biceps"
-                },
-                {
-                    "name": "Unilateral Iliac Pull-downs",
-                    "isWarmUp": false,
-                    "setsAndReps": {
-                        "sets": 3,
-                        "repRange": [
-                            6,
-                            8
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Unilateral Iliac Pull-downs",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                6,
+                                8
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Set the cable on the highest notch. Sit on an inclined bench facing the cable machine, put your hand on the bench for support. Stop pulling when your elbow is by your side.",
+                        "muscleFocus": "Iliac lats"
                     },
-                    "description": "Set the cable on the highest notch. Sit on an inclined bench facing the cable machine, put your hand on the bench for support. Stop pulling when your elbow is by your side.",
-                    "muscleFocus": "Iliac lats"
-                },
-                {
-                    "name": "Unilateral Lumbar Rows",
-                    "isWarmUp": false,
-                    "setsAndReps": {
-                        "sets": 3,
-                        "repRange": [
-                            6,
-                            8
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Unilateral Lumbar Rows",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                6,
+                                8
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Set the cable somewhere in the middle, somewhere around 5-6. Sit on an inclined bench facing the cable machine, put your hand on the bench for support. Stop pulling when your elbow is by your side.",
+                        "muscleFocus": "Lumbar lats"
                     },
-                    "description": "Set the cable somewhere in the middle, somewhere around 5-6. Sit on an inclined bench facing the cable machine, put your hand on the bench for support. Stop pulling when your elbow is by your side.",
-                    "muscleFocus": "Lumbar lats"
-                },
-                {
-                    "name": "Incline Bicep Curls",
-                    "isWarmUp": false,
-                    "setsAndReps": {
-                        "sets": 3,
-                        "repRange": [
-                            8,
-                            12
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Incline Bicep Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Sit on a bench that is inclined on a 45 degree angle. Make sure to not let your elbows swing. Control the movement and keep your elbows in place.",
+                        "muscleFocus": "Bicep"
                     },
-                    "description": "Make sure to not let your elbows swing. Control the movement and keep your elbows in place.",
-                    "muscleFocus": "Bicep"
-                },
-                {
-                    "name": "Hammer Curls",
-                    "isWarmUp": false,
-                    "setsAndReps": {
-                        "sets": 3,
-                        "repRange": [
-                            8,
-                            12
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Hammer Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Make sure to not let your elbows swing. Control the movement and keep your elbows in place.",
+                        "muscleFocus": "Brachialis"
                     },
-                    "description": "Make sure to not let your elbows swing. Control the movement and keep your elbows in place.",
-                    "muscleFocus": "Brachialis"
-                },
-                {
-                    "name": "Forearm Curls",
-                    "isWarmUp": false,
-                    "setsAndReps": {
-                        "sets": 3,
-                        "repRange": [
-                            12,
-                            15
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Forearm Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                12,
+                                15
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Make sure you are getting a full range of motion. Pick a weight that you can comfortably control.",
+                        "muscleFocus": "Forearm flexors"
+                    }
+                ]
+            },
+            {
+                "name": "Pull Day B",
+                "exercises": [
+                    {
+                        "name": "Pull-ups",
+                        "isWarmUp": true,
+                        "setsAndReps": {
+                            "sets": 2,
+                            "repRange": [
+                                5
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Warm up with an easy, dynamic stretch. Make sure to go chin to bar and all the way down on every rep.",
+                        "muscleFocus": "Thoracic lats, biceps"
                     },
-                    "description": "Make sure you are getting a full range of motion. Pick a weight that you can comfortably control.",
-                    "muscleFocus": "Forearm flexors"
-                }
-            ]
-        },
-        {
-            "name": "Pull Day B",
-            "exercises": [
-                {
-                    "name": "Pull-ups",
-                    "isWarmUp": true,
-                    "setsAndReps": {
-                        "sets": 2,
-                        "repRange": [
-                            5
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Incline DB Rear Delt Rows → Incline DB Shrugs",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                6,
+                                8
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Put the bench on a 45 degree angle and lay down on it with your head over the top of the bench. Complete your set of rear delt rows, and follow them up with shrugs which will be done until failure.",
+                        "muscleFocus": "Rear delts, rhomboids, traps"
                     },
-                    "description": "Warm up with an easy, dynamic stretch. Make sure to go chin to bar and all the way down on every rep.",
-                    "muscleFocus": "Thoracic lats, biceps"
-                },
-                {
-                    "name": "Incline DB Rear Delt Rows → Incline DB Shrugs",
-                    "isWarmUp": false,
-                    "setsAndReps": {
-                        "sets": 3,
-                        "repRange": [
-                            6,
-                            8
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Unilateral Thoracic Rows",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                6,
+                                8
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Set the cable on one of the lower notches, somewhere around 1-2. Put one knee on an inclined bench facing the cable machine, put your hand on the bench for support. Stop pulling when your elbow is by your side.",
+                        "muscleFocus": "Thoracic lats"
                     },
-                    "description": "Put the bench on a 45 degree angle and lay down on it with your head over the top of the bench. Complete your set of rear delt rows, and follow them up with shrugs which will be done until failure.",
-                    "muscleFocus": "Rear delts, rhomboids, traps"
-                },
-                {
-                    "name": "Unilateral Thoracic Rows",
-                    "isWarmUp": false,
-                    "setsAndReps": {
-                        "sets": 3,
-                        "repRange": [
-                            6,
-                            8
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Cable Rear Delt Flies",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Set the cable on one of the higher notches. Stand centered to the cable machine, and put the non-working hand on the machine for support. Pull down all the way to your side, with the cable lined up with your arm. Make sure to not use your triceps to help you pull.",
+                        "muscleFocus": "Rear delts"
                     },
-                    "description": "Set the cable on one of the lower notches, somewhere around 1-2. Put one knee on an inclined bench facing the cable machine, put your hand on the bench for support. Stop pulling when your elbow is by your side.",
-                    "muscleFocus": "Thoracic lats"
-                },
-                {
-                    "name": "Cable Rear Delt Flies",
-                    "isWarmUp": false,
-                    "setsAndReps": {
-                        "sets": 3,
-                        "repRange": [
-                            8,
-                            12
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Unilateral Preacher Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Set up a bench at a 60 degree angle and rest your arm on the inclined part of the bench. Make sure that your wrists are up to prevent injury.",
+                        "muscleFocus": "Biceps"
                     },
-                    "description": "Set the cable on one of the higher notches. Stand centered to the cable machine, and put the non-working hand on the machine for support. Pull down all the way to your side, with the cable lined up with your arm. Make sure to not use your triceps to help you pull.",
-                    "muscleFocus": "Rear delts"
-                },
-                {
-                    "name": "Unilateral Preacher Curls",
-                    "isWarmUp": false,
-                    "setsAndReps": {
-                        "sets": 3,
-                        "repRange": [
-                            8,
-                            12
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Reverse Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Make sure to not let your elbows swing. Control the movement and keep your elbows in place.",
+                        "muscleFocus": "Brachioradialis, biceps."
                     },
-                    "description": "Set up a bench at a 60 degree angle and rest your arm on the inclined part of the bench. Make sure that your wrists are up to prevent injury.",
-                    "muscleFocus": "Biceps"
-                },
-                {
-                    "name": "Reverse Curls",
-                    "isWarmUp": false,
-                    "setsAndReps": {
-                        "sets": 3,
-                        "repRange": [
-                            8,
-                            12
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Forearm Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                12,
+                                15
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Kneel down and rest both arms on the bench. Curl with your arms still resting on the bench, using a pronated grip. Make sure you are getting a full range of motion. Pick a weight that you can comfortably control.",
+                        "muscleFocus": "Forearm extensors"
+                    }
+                ]
+            },
+            {
+                "name": "Push Day",
+                "exercises": [
+                    {
+                        "name": "Push-ups",
+                        "isWarmUp": true,
+                        "setsAndReps": {
+                            "sets": 2,
+                            "repRange": [
+                                10
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Warm up with an easy, dynamic stretch. Make sure to go slowly and control every rep.",
+                        "muscleFocus": "Costal pecs, sternal pecs, triceps"
                     },
-                    "description": "Make sure to not let your elbows swing. Control the movement and keep your elbows in place.",
-                    "muscleFocus": "Brachioradialis, biceps."
-                },
-                {
-                    "name": "Forearm Curls",
-                    "isWarmUp": false,
-                    "setsAndReps": {
-                        "sets": 3,
-                        "repRange": [
-                            12,
-                            15
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Flat DB Bench Press",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                10
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Make sure to not have your elbows flared out. Have the dumbbells meet at the top of the range of motion.",
+                        "muscleFocus": "Costal pecs, sternal pecs, triceps"
                     },
-                    "description": "Kneel down and rest both arms on the bench. Curl with your arms still resting on the bench, using a pronated grip. Make sure you are getting a full range of motion. Pick a weight that you can comfortably control.",
-                    "muscleFocus": "Forearm extensors"
-                }
-            ]
-        },
-        {
-            "name": "Push Day A",
-            "exercises": [
-                {
-                    "name": "Pull-ups",
-                    "isWarmUp": true,
-                    "setsAndReps": {
-                        "sets": 2,
-                        "repRange": [
-                            5
-                        ],
-                        "repType": "reps"
+                    {
+                        "name": "Incline DB Bench Press",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                10
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Put the bench on a 20-30 degree angle. Make sure to not have your elbows flared out. Have the dumbbells meet at the top of the range of motion.",
+                        "muscleFocus": "Sternal pecs, clavicular pecs, triceps"
                     },
-                    "description": "Warm up with an easy, dynamic stretch. Make sure to go chin to bar and all the way down on every rep.",
-                    "muscleFocus": "Thoracic lats, biceps"
-                }
-            ]
-        }
-    ]
-}
+                    {
+                        "name": "DB Shoulder Press",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                10
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Put the bench on a 60-70 degree angle. Make sure to not have your elbows flared out. Have the dumbbells meet at the top of the range of motion.",
+                        "muscleFocus": "Front delts, lateral delts"
+                    },
+                    {
+                        "name": "Unilateral Tricep Extensions",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Set the cable to one of the higher notches. Position yourself so that the cable lines up with your arm while doing the exercise.",
+                        "muscleFocus": "Triceps"
+                    },
+                    {
+                        "name": "Unilateral Cable Lateral Raise",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                12,
+                                15
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Set the cable on one of the lower notches, somewhere around 2-3. Make sure you are doing this exercise in the scapular plane.",
+                        "muscleFocus": "Lateral delts"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "programName": "Tanya's Program",
+        "startOn": 1,
+        "days": [
+            {
+                "name": "Pull Day A",
+                "exercises": [
+                    {
+                        "name": "Unilateral Iliac Pull-downs",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                6,
+                                8
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Use the high cable. Sit on an inclined bench facing the cable machine, put your hand on the bench for support. Stop pulling when your elbow is by your side.",
+                        "muscleFocus": "Iliac lats"
+                    },
+                    {
+                        "name": "Lumbar Rows",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                6,
+                                8
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Use the cable that is at the floor level, and attach a double D-handle. Sit on the floor and put your feet on the foot rests. Stop pulling when your elbow is by your side.",
+                        "muscleFocus": "Lumbar lats"
+                    },
+                    {
+                        "name": "Incline Bicep Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Sit on a bench that is inclined on a 45 degree angle. Make sure to not let your elbows swing. Control the movement and keep your elbows in place.",
+                        "muscleFocus": "Bicep"
+                    },
+                    {
+                        "name": "Hammer Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Make sure to not let your elbows swing. Control the movement and keep your elbows in place.",
+                        "muscleFocus": "Brachialis"
+                    },
+                    {
+                        "name": "Forearm Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                12,
+                                15
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Make sure you are getting a full range of motion. Pick a weight that you can comfortably control.",
+                        "muscleFocus": "Forearm flexors"
+                    }
+                ]
+            },
+            {
+                "name": "Pull Day B",
+                "exercises": [
+                    {
+                        "name": "Teres Pull-downs",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                10
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Put your legs under the thigh pads. Use your whole back to pull down.",
+                        "muscleFocus": "Teres major"
+                    },
+                    {
+                        "name": "Incline DB Rear Delt Rows",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                6,
+                                8
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Put the bench on a 45 degree angle and lay down on it with your head over the top of the bench.",
+                        "muscleFocus": "Rear delts, rhomboids, traps"
+                    },
+                    {
+                        "name": "Unilateral Thoracic Rows",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                6,
+                                8
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Attach a D-handle to the cable that is near the floor. Put one knee on an inclined bench facing the cable machine, put your hand on the bench for support. Stop pulling when your elbow is by your side.",
+                        "muscleFocus": "Thoracic lats"
+                    },
+                    {
+                        "name": "Cable Rear Delt Flies",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Use the high cable. Stand centered to the cable machine, and put the non-working hand on the machine for support. Pull down all the way to your side, with the cable lined up with your arm. Make sure to not use your triceps to help you pull.",
+                        "muscleFocus": "Rear delts"
+                    },
+                    {
+                        "name": "Preacher Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Use the EZ-bar, or dumbbells if you prefer.",
+                        "muscleFocus": "Biceps"
+                    },
+                    {
+                        "name": "Reverse Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Use the EZ-bar, or dumbbells if you prefer.",
+                        "muscleFocus": "Brachioradialis, biceps."
+                    },
+                    {
+                        "name": "Forearm Curls",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                12,
+                                15
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Kneel down and rest both arms on the bench. Curl with your arms still resting on the bench, using a pronated grip. Make sure you are getting a full range of motion. Pick a weight that you can comfortably control.",
+                        "muscleFocus": "Forearm extensors"
+                    }
+                ]
+            },
+            {
+                "name": "Push Day",
+                "exercises": [
+                    {
+                        "name": "Flat DB Bench Press",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                10
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Make sure to not have your elbows flared out. Have the dumbbells meet at the top of the range of motion.",
+                        "muscleFocus": "Costal pecs, sternal pecs, triceps"
+                    },
+                    {
+                        "name": "Incline DB Bench Press",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                10
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Put the bench on a 20-30 degree angle. Make sure to not have your elbows flared out. Have the dumbbells meet at the top of the range of motion.",
+                        "muscleFocus": "Sternal pecs, clavicular pecs, triceps"
+                    },
+                    {
+                        "name": "DB Shoulder Press",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                10
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Put the bench on a 60-70 degree angle. Make sure to not have your elbows flared out. Have the dumbbells meet at the top of the range of motion.",
+                        "muscleFocus": "Front delts, lateral delts"
+                    },
+                    {
+                        "name": "Unilateral Tricep Extensions",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                12
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Use the high cable. Position yourself so that the cable lines up with your arm while doing the exercise.",
+                        "muscleFocus": "Triceps"
+                    },
+                    {
+                        "name": "Unilateral Cable Lateral Raise",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                12,
+                                15
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Attach a D-handle to the cable near the floor. Make sure you are doing this exercise in the scapular plane.",
+                        "muscleFocus": "Lateral delts"
+                    }
+                ]
+            },
+            {
+                "name": "Lower Body Day",
+                "exercises": [
+                    {
+                        "name": "Leg press",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                6,
+                                8
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Do not lock out your knees. Bring your knees as close to your chest as possible.",
+                        "muscleFocus": "Glutes, quads, hamstrings"
+                    },
+                    {
+                        "name": "Leg extensions",
+                        "isWarmUp": false,
+                        "setsAndReps": {
+                            "sets": 3,
+                            "repRange": [
+                                8,
+                                10
+                            ],
+                            "repType": "reps"
+                        },
+                        "description": "Pause for a moment at the top of the range of motion.",
+                        "muscleFocus": "Quads"
+                    }
+                ]
+            }
+        ]
+    }
+]

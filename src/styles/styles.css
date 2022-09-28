@@ -197,4 +197,5 @@ body {
 
 .exercise-description {
     margin: 8px 0 14px 0;
+    user-select: text;
 }

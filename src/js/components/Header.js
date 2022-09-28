@@ -30,13 +30,17 @@ export default class Header extends Component {
 
             console.log(program);
             programTitle.textContent = program?.programName ?? 'Choose a program';
-            programDay.textContent = `${program?.days[0]?.name}` ?? '';
 
             // program.days[0].exercises.forEach(day => { // change [0] to corresponding day
             //     new ExerciseCard(day, exercisesList);
             // });
 
-            setExerciseList(program.days[0].exercises); // change [0] to corresponding day
+            const list = program.days.find(day => day.name === JSON.parse(localStorage.getItem('latest-day'))) ?? program.days[0];
+            console.log(list);
+
+            programDay.textContent = `${list.name}` ?? '';
+
+            setExerciseList(list.exercises ?? program.days[0].exercises); // change [0] to corresponding day
         }
 
         const setProgramDay = () => {
@@ -48,7 +52,9 @@ export default class Header extends Component {
                 options: program.days.map(day => day.name)
             }, document.body).getResult().then(selectedDay => {
                 const list = program.days.find(day => day.name === selectedDay);
-                console.log(list);
+
+                localStorage.setItem('latest-day', JSON.stringify(selectedDay));
+
                 programDay.textContent = list.name;
                 startDay(list.exercises);
             });
@@ -175,7 +181,6 @@ class Prompt extends Component {
                 document.querySelector('.overlay').remove();
                 Prompt.isOpen = false;
                 return resolve(this.result);
-                // return resolve(this.props.default);
             });
         });
     }
