@@ -16,10 +16,7 @@ export default class Header extends Component {
             new Prompt({
                 default: programTitle.textContent,
                 question: 'Select a program:',
-                options: [
-                    'PPL',
-                    'Eagle Lake'
-                ]
+                options: this.props.programs.map(prog => prog.programName)
             }, document.body).getResult().then(startProgram);
         }
 
@@ -27,12 +24,13 @@ export default class Header extends Component {
             localStorage.setItem('latest-program', JSON.stringify(programName));
             selectedProgram = programName;
                 
-            const program = this.props.programs.find(prog => prog.details.programName === programName);
+            const program = this.props.programs.find(prog => prog.programName === programName);
 
-            const date = new Date();
+            // const date = new Date();
 
-            programTitle.textContent = program.details.programName;
-            programDay.textContent = `${program.days[0].name}`;
+            console.log(program);
+            programTitle.textContent = program?.programName ?? 'Choose a program';
+            programDay.textContent = `${program?.days[0]?.name}` ?? '';
 
             // program.days[0].exercises.forEach(day => { // change [0] to corresponding day
             //     new ExerciseCard(day, exercisesList);
@@ -42,8 +40,7 @@ export default class Header extends Component {
         }
 
         const setProgramDay = () => {
-            const program = this.props.programs.find(prog => prog.details.programName === selectedProgram);
-            console.log(selectedProgram);
+            const program = this.props.programs.find(prog => prog.programName === selectedProgram);
 
             new Prompt({
                 default: programDay.textContent,
@@ -70,6 +67,7 @@ export default class Header extends Component {
         const setExerciseList = list => {
             clearExerciseList();
             let order = 1;
+            console.log(list);
             list.forEach(exercise => {
                 new ExerciseCard({
                     ...exercise,
@@ -110,8 +108,6 @@ export default class Header extends Component {
         });
     }
 }
-
-// done btn pressed on 
 
 class Prompt extends Component {
     static isOpen = false;
@@ -243,6 +239,7 @@ class Dropdown extends Component {
                 optionBox.addEventListener('click', () => {
                     document.querySelector('.options-list').style.display = 'none';
                     document.querySelector('.default-option').textContent = optionBox.textContent;
+                    document.querySelector('.menu-arrow').style.transform = 'rotate(0deg)';
                     return resolve(optionBox.textContent);
                 });
             });

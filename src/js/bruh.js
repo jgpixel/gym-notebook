@@ -1,7 +1,7 @@
 import Component from './Component.js';
 import Header from './components/Header.js';
 
-const fakePrograms = [
+const programsFake = [
     {
         programName: 'PPL',
         startOn: 1,
@@ -95,17 +95,16 @@ export default class App extends Component {
                 content_type: 'program'
             });
 
-            return new Promise((resolve, _) => {
-                return resolve(entries.items.map(item => item.fields));
-            });
+            return entries.items.map(item => item.fields);
         }
-        
+
         new LoadingScreen({}, this.root)
 
         fetchPrograms().then(programs => {
-            document.querySelector('#loading-screen').remove();
             console.log(programs);
-            new Header({ programs }, this.root);
+            console.log(programsFake);
+            document.querySelector('#loading-screen').remove();
+            new Header({ programsFake }, this.root);
         });
     }
 }

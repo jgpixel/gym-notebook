@@ -75,6 +75,7 @@ body {
     width: 100%;
     top: 10px;
     position: absolute;
+    user-select: none;
 }
 
 .options-title {
@@ -144,8 +145,12 @@ body {
 .exercise-card-container {
     background-color: var(--primary-text);
     border-radius: 12px;
-    padding: 12px 20px
+    padding: 16px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+/* Exercise Card BG */
+
 
 .exercise-card-container:not(:last-child) {
     margin-bottom: 10px;
@@ -153,13 +158,14 @@ body {
 
 .exercise-card-container h3 {
     color: var(--secondary-text);
-    font-size: 22px;
+    font-size: 24px;
+    margin-bottom: 2px;
 }
 
 .order {
     color: var(--tertiary-text);
-    margin-right: 16px;
-    font-size: 16px;
+    margin-right: 18px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -174,17 +180,21 @@ body {
     color: var(--tertiary-text);
 }
 
-.add-btn {
-    font-size: 22px;
-    font-weight: bold;
+.exercise-info {
     margin: 0;
+    width: 40px;
+    cursor: pointer;
 }
 
-.add-sets-container {
-    display: flex;
-    flex-direction: column;
+.sets-and-reps {
+    font-weight: medium;
+    font-size: 16px;
 }
 
 .center-content {
     margin-right: auto;
+}
+
+.exercise-description {
+    margin: 8px 0 14px 0;
 }

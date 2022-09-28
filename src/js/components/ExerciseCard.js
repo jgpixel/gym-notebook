@@ -7,24 +7,21 @@ export default class ExerciseCard extends Component{
     }
 
     render() {
-        const formatSetsAndReps = ({ sets, repRange }) => {
+        const formatSetsAndReps = ({ sets, repRange, repType }) => {
             let formatted = sets.toString();
     
             switch (repRange.length) {
                 case 0:
                     return formatted += ' sets';
                 case 1:
-                    return formatted += ` × ${repRange[0]}`;
+                    return formatted += ` × ${repRange[0]} ${repType}`;
                 default:
-                    return formatted += ` × ${repRange[0]}-${repRange[1]}`;
+                    return formatted += ` × ${repRange[0]}-${repRange[1]} ${repType}`;
             }
         }
 
         const exerciseCardContainer = document.createElement('div');
         exerciseCardContainer.className = 'exercise-card-container';
-
-        const progressBar = document.createElement('div');
-        progressBar.className = 'progress-bar';
 
         const wrapper = document.createElement('div');
         wrapper.className = 'exercise-wrapper';
@@ -43,43 +40,70 @@ export default class ExerciseCard extends Component{
         setsAndReps.className = 'sets-and-reps';
         setsAndReps.textContent = formatSetsAndReps(this.props.setsAndReps);
 
-        const addSetsContainer = document.createElement('div');
-        addSetsContainer.className = 'add-sets-container';
-
-        const plusBtn = document.createElement('span');
-        plusBtn.className = 'add-btn';
-        plusBtn.textContent = '+';
-
-        const minusBtn = document.createElement('span');
-        minusBtn.className = 'add-btn';
-        minusBtn.textContent = '-';
+        const exerciseInfo = document.createElement('img');
+        exerciseInfo.className = 'exercise-info';
+        Component.setAttributes({
+            'src': 'src/assets/info.svg',
+            'alt': 'Click to see more info about the exercise.'
+        }, exerciseInfo);
 
         this.root.appendChild(exerciseCardContainer);
-        exerciseCardContainer.appendChild(progressBar);
         exerciseCardContainer.appendChild(wrapper);
         wrapper.appendChild(order);
         wrapper.appendChild(centerContent);
         centerContent.appendChild(exerciseName);
         centerContent.appendChild(setsAndReps);
-        wrapper.appendChild(addSetsContainer);
-        addSetsContainer.appendChild(plusBtn);
-        addSetsContainer.appendChild(minusBtn);
+        wrapper.appendChild(exerciseInfo);
+
+        exerciseInfo.addEventListener('click', () => {
+            new Modal({
+                title: this.props.name,
+                description: this.props.description,
+                muscleFocus: this.props.muscleFocus
+            }, document.body);
+        });
     }
 }
 
-/* <View key={id} style={[styles.container, styles.shadowProp]}>
-    <View style={[styles.progressBar, { width: `${(setsAndReps.setsCompleted / setsAndReps.sets) * 100}%` }]}></View>
-    <View style={styles.wrapper}>
-        <Text style={styles.order}>{isWarmUp ? 'W' : order++}</Text>
-        <View style={styles.centerContent}>
-            <Text style={styles.name}>{name}</Text>
-            <View style={styles.details}>
-                <Text style={[styles.setsAndReps, { marginRight: 20 }]}>{formatSetsAndReps(setsAndReps)}</Text>
-                <Text style={styles.setsAndReps}>{`Last session: ${lastSessionStats.amount} ${lastSessionStats.type}`}</Text>
-            </View>
-        </View>
-        <TouchableOpacity onPress={() => setSelectedExercise(name)}>
-            <Image style={styles.plus} source={setsAndReps.setsCompleted / setsAndReps.sets >= 1 ? require('../assets/icons/check.png') : require('../assets/icons/plus.png')} />
-        </TouchableOpacity>
-    </View>
-</View> */
+class Modal extends Component {
+    constructor(props, root) {
+        super(props, root);
+        this.render();
+    }
+
+    render() {
+        const overlay = document.createElement('div');
+        overlay.className = 'overlay';
+
+        const modalContainer = document.createElement('div');
+        modalContainer.className = 'prompt-container';
+
+        const title = document.createElement('h3');
+        title.textContent = this.props.title;
+
+        const description = document.createElement('p');
+        description.className = 'exercise-description';
+        description.textContent = this.props.description;
+        
+        const muscleFocus = document.createElement('span');
+        muscleFocus.className = 'exercise-description';
+        muscleFocus.textContent = `Muscle focus: ${this.props.muscleFocus}`;
+
+        const doneBtn = document.createElement('button');
+        doneBtn.className = 'btn';
+        doneBtn.textContent = 'Done';
+
+        this.root.appendChild(overlay);
+        overlay.appendChild(modalContainer);
+        modalContainer.appendChild(title);
+        modalContainer.appendChild(description);
+        modalContainer.appendChild(muscleFocus);
+        modalContainer.appendChild(doneBtn);
+
+        overlay.addEventListener('click', e => {
+            console.log(e.target);
+            if (e.target !== overlay && e.target !== doneBtn) return;
+            overlay.remove();
+        });
+    }
+}
