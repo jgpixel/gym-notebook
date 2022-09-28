@@ -1,0 +1,190 @@
+@import url('global.css');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100%;
+}
+
+#root {
+    min-width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: min(600px, calc(100vw - 30px));
+}
+
+.program-title {
+    margin-top: 20px;
+}
+
+.program-day {
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.program-title,
+.program-day {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.program-title:hover,
+.program-day:hover {
+    color: var(--primary-text-hov);
+}
+
+.prompt-container {
+    width: clamp(200px, 600px, calc(100vw - 30px));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: var(--bg);
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.rel {
+    width: 65%;
+    height: 90px;
+    position: relative;
+}
+
+.options-container {
+    width: 100%;
+    top: 10px;
+    position: absolute;
+}
+
+.options-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: 10px;
+    padding: 10px;
+
+    border: 1px solid var(--primary-text);
+
+    cursor: pointer;
+}
+
+.options-list {
+    width: 100%;
+
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    max-height: 30vh;
+    overflow: scroll;
+
+    display: none;
+}
+
+.option-box {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bg);
+    cursor: pointer;
+}
+
+.option-box:not(:last-child) {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.option-box:hover {
+    background-color: var(--light-grey);
+}
+
+.menu-arrow {
+    height: 12px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    
+    overflow: auto;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    
+    user-select: none;
+}
+
+.exercise-card-container {
+    background-color: var(--primary-text);
+    border-radius: 12px;
+    padding: 12px 20px
+}
+
+.exercise-card-container:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.exercise-card-container h3 {
+    color: var(--secondary-text);
+    font-size: 22px;
+}
+
+.order {
+    color: var(--tertiary-text);
+    margin-right: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.exercise-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.add-btn,
+.sets-and-reps {
+    color: var(--tertiary-text);
+}
+
+.add-btn {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.add-sets-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-content {
+    margin-right: auto;
+}
